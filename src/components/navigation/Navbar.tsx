@@ -1,12 +1,16 @@
+'use client';
+
 import Logo from './Logo';
-import NavItems from './NavItems';
+import NavMenuDesktop from './NavMenuDesktop';
+import NavMenuMobile from './NavMenuMobile';
 
 export default function Navbar() {
     return (
         <header className="bg-rw-yellow sticky top-0 z-202 py-6">
-            <nav className="flex md:flex-rowq container flex-wrap justify-between items-center">
+            <nav className="flex md:flex-row container flex-wrap justify-between items-center">
                 <Logo />
-                <NavItems />
+                <NavMenuDesktop />
+                <NavMenuMobile />
             </nav>
         </header>
     );
