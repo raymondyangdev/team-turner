@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
-        <section className="bg-rw-grey py-4 h-full flex items-center flex-1">
-            <div className="container text-rw-white px-4">
+        <section className="bg-rw-grey py-4 h-full flex items-center flex-1 px-4">
+            <div className="container text-rw-white">
                 <div className="flex flex-col sm:flex-row justify-between gap-8">
                     <div className="flex flex-col">
                         <h2 className="text-2xl my-4">
