@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useClickAway } from 'react-use';
-import { navbarContactRoutes, aboutRoutes, buySellRoutes } from './NavRoutes';
+import { navbarContactRoutes, aboutRoutes, buySellRoutes } from '../NavRoutes';
 
 export default function NavMenuMobile() {
     const [isOpen, setOpen] = useState(false);

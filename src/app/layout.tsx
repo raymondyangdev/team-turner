@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 // Component imports
-import Navbar from "@/components/navigation/Navbar";
-import Footer from '@/components/navigation/Footer';
+import Navbar from '@/components/navigation/navbar/Navbar';
+import Footer from '@/components/navigation/footer/Footer';
 
 export const metadata: Metadata = {
     title: 'Team Turner | Ray White Orewa',

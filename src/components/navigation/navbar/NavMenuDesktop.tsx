@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { navbarContactRoutes, aboutRoutes, buySellRoutes } from './NavRoutes';
+import { navbarContactRoutes, aboutRoutes, buySellRoutes } from '../NavRoutes';
 
 export default function NavMenuDesktop() {
     const routes = [...navbarContactRoutes, ...aboutRoutes, ...buySellRoutes];

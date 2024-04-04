@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { footerContactRoutes, aboutRoutes, buySellRoutes } from './NavRoutes';
+import { footerContactRoutes, aboutRoutes, buySellRoutes } from '../NavRoutes';
 import FooterHeading from './FooterHeading';
 
 export default function Footer() {
