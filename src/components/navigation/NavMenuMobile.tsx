@@ -1,12 +1,13 @@
 import { useRef, useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useClickAway } from 'react-use';
-import { NavRoutes as routes } from './NavRoutes';
+import { contactRoutes, aboutRoutes, buySellRoutes } from './NavRoutes';
 
 export default function NavMenuMobile() {
     const [isOpen, setOpen] = useState(false);
     const ref = useRef(null);
     useClickAway(ref, () => setOpen(false));
+    const routes = [...contactRoutes, ...aboutRoutes, ...buySellRoutes];
 
     return (
         <div ref={ref} className="md:hidden">
