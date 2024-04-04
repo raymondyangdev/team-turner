@@ -1,7 +1,9 @@
 import Link from 'next/link';
-import { NavRoutes as routes } from './NavRoutes';
+import { contactRoutes, aboutRoutes, buySellRoutes } from './NavRoutes';
 
 export default function NavMenuDesktop() {
+    const routes = [...contactRoutes, ...aboutRoutes, ...buySellRoutes];
+
     return (
         <div className="hidden md:flex md:gap-4">
             {routes.map((link) => (
