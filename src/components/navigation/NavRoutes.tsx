@@ -1,10 +1,19 @@
-const navbarContactRoutes = [{ label: 'Contact us', route: '/contact/' }];
-const footerContactRoutes = [{ label: 'Get in touch', route: '/contact/' }];
-const aboutRoutes = [
+interface Route {
+    label: string;
+    route: string;
+}
+
+const navbarContactRoutes: Route[] = [
+    { label: 'Contact us', route: '/contact/' },
+];
+const footerContactRoutes: Route[] = [
+    { label: 'Get in touch', route: '/contact/' },
+];
+const aboutRoutes: Route[] = [
     { label: 'Our team', route: '/our-team' },
     { label: 'Our testimonials', route: '/testimonials' },
 ];
-const buySellRoutes = [
+const buySellRoutes: Route[] = [
     { label: 'Our listings', route: '/our-listings' },
     { label: 'Our sales', route: '/our-sales' },
 ];
