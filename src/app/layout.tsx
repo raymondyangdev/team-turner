@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Component imports
 import Navbar from "@/components/navigation/Navbar";
-import Footer from '@/components/Footer';
+import Footer from '@/components/navigation/Footer';
 
 export const metadata: Metadata = {
     title: 'Team Turner | Ray White Orewa',
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
+            <body className="flex h-screen flex-col w-full">
                 <Navbar />
                 <main className="flex-1">{children}</main>
                 <Footer />
