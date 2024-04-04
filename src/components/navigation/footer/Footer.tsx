@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { contactRoutes, aboutRoutes, buySellRoutes } from './NavRoutes';
+import { footerContactRoutes, aboutRoutes, buySellRoutes } from '../NavRoutes';
 import FooterHeading from './FooterHeading';
 
 export default function Footer() {
@@ -46,7 +46,10 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex justify-between flex-1 md:flex-none md:basis-2/3 xl:container">
-                    <FooterHeading title="Contact us" routes={contactRoutes} />
+                    <FooterHeading
+                        title="Contact us"
+                        routes={footerContactRoutes}
+                    />
                     <FooterHeading title="About us" routes={aboutRoutes} />
                     <FooterHeading
                         title="Buy & Sell with us"
